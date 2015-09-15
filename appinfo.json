@@ -7,7 +7,20 @@
     "longName": "rulezDate",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+          {
+                "characterRegex": "[0-9,:]",
+                "file": "fonts/RobotoCondensed-Regular.ttf",
+                "name": "ROBOTO_48",
+                "type": "font"
+            },
+            {
+                "characterRegex": "[0-9,:]",
+                "file": "fonts/RobotoCondensed-Regular.ttf",
+                "name": "ROBOTO_24",
+                "type": "font"
+            }
+        ]
     },
     "sdkVersion": "2",
     "shortName": "rulezDate",
