@@ -8,7 +8,12 @@
     "projectType": "native",
     "resources": {
         "media": [
-          {
+            {
+                "file": "fonts/Belwe-Bold.ttf",
+                "name": "BOLWE_BOL_64",
+                "type": "font"
+            },
+            {
                 "characterRegex": "[0-9,:]",
                 "file": "fonts/RobotoCondensed-Regular.ttf",
                 "name": "ROBOTO_48",

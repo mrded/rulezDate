@@ -41,16 +41,16 @@ static void update_time() {
 
   text_layer_set_text(month_layer, month_text);
   text_layer_set_text(day_layer, day_text);
-  text_layer_set_text(text_layer, "477 лет со дня запуска первой твердотопливной бабы яги");
+  text_layer_set_text(text_layer, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
 }
 
 static void main_window_load(Window *window) {
-  month_layer = text_layer_create(GRect(0, 0, 144, 40));
-  day_layer = text_layer_create(GRect(0, 40, 144, 49));
-  text_layer = text_layer_create(GRect(0, 92, 144, 76));
+  month_layer = text_layer_create(GRect(0, 0, 144, 28));
+  day_layer = text_layer_create(GRect(0, 30, 144, 70));
+  text_layer = text_layer_create(GRect(0, 98, 144, 70));
 
   month_font = fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD);
-  day_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_ROBOTO_48));
+  day_font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_BOLWE_BOL_64));
   text_font = fonts_get_system_font(FONT_KEY_GOTHIC_18);
 
   text_layer_set_font(month_layer, month_font);
