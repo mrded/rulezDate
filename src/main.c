@@ -1,4 +1,6 @@
 #include <pebble.h>
+#include "database.h"
+  
 static Window *s_main_window;
 
 static TextLayer *month_layer;
@@ -11,9 +13,8 @@ static GFont text_font;
 
 static char month_text[32];
 static char day_text[32];
-static char text_text[32];
 
-static char monthsNames[12][20] = {
+const char monthsNames[12][20] = {
   "Январь", 
   "Февраль", 
   "Март", 
@@ -41,7 +42,7 @@ static void update_time() {
 
   text_layer_set_text(month_layer, month_text);
   text_layer_set_text(day_layer, day_text);
-  text_layer_set_text(text_layer, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+  text_layer_set_text(text_layer, get_event(tick_time->tm_mon, tick_time->tm_mday));
 }
 
 static void main_window_load(Window *window) {
