@@ -3,11 +3,17 @@
     "capabilities": [
         ""
     ],
-    "companyName": "dmitry@demenchuk.me",
+    "companyName": "Dmitry Demenchuk",
     "longName": "rulezDate",
     "projectType": "native",
     "resources": {
         "media": [
+            {
+                "file": "images/rulezDate.png",
+                "menuIcon": true,
+                "name": "MENU_ICON",
+                "type": "png"
+            },
             {
                 "characterRegex": "[0-9]",
                 "file": "fonts/Belwe-Bold.ttf",

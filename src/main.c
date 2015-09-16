@@ -39,7 +39,7 @@ static void update_time() {
 
   snprintf(month_text, sizeof(month_text), "%s", monthsNames[tick_time->tm_mon]);
   snprintf(day_text, sizeof(day_text), "%i", tick_time->tm_mday);
-
+  
   text_layer_set_text(month_layer, month_text);
   text_layer_set_text(day_layer, day_text);
   text_layer_set_text(text_layer, get_event(tick_time->tm_mon + 1, tick_time->tm_mday));
