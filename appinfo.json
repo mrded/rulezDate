@@ -9,6 +9,7 @@
     "resources": {
         "media": [
             {
+                "characterRegex": "[0-9]",
                 "file": "fonts/Belwe-Bold.ttf",
                 "name": "BOLWE_BOL_64",
                 "type": "font"
